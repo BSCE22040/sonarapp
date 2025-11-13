@@ -34,15 +34,16 @@ class SmsVerificationPage extends StatelessWidget {
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                 Navigator.push(context, MaterialPageRoute(builder: (context)=>Homepage()));
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Homepage()),
+                );
                 // Later you can verify the code here
               },
-              
               style: ElevatedButton.styleFrom(
                 minimumSize: Size(double.infinity, 50),
-                
               ),
-              child: Text("Verify"),
+              child: Text("Verify"), // <-- child is last
             ),
           ],
         ),

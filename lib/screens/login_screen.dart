@@ -35,11 +35,10 @@ class LoginScreen extends StatelessWidget {
               onPressed: () {
                 // TODO: login logic
               },
-              
               style: ElevatedButton.styleFrom(
                 minimumSize: Size(double.infinity, 50),
               ),
-              child: Text("Login"),
+              child: Text("Login"), // <-- child is last
             ),
             SizedBox(height: 20),
             TextButton(
@@ -47,7 +46,7 @@ class LoginScreen extends StatelessWidget {
                 // TODO: Navigate to Register Screen
               },
               child: Text("Don't have an account? Register"),
-            )
+            ),
           ],
         ),
       ),
