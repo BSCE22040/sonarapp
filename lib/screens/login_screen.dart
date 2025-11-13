@@ -45,7 +45,7 @@ class LoginScreen extends StatelessWidget {
               onPressed: () {
                 // TODO: Navigate to Register Screen
               },
-              child: Text("Don't have an account? Register"),
+              child: Text("Don't have an account? Register"), //child is alreadylast 
             ),
           ],
         ),
